@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Cats</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Quicksand', 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #fff5e1 0%, #ffe4e1 100%);
+            letter-spacing: 0.3px;
+        }
+        header {
+            background: linear-gradient(135deg, #ff8c42 0%, #ff6b6b 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        h1 {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #ff6b6b;
+            border-bottom: 3px solid #ffd89b;
+            padding-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(255,107,107,0.1);
+        }
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        p {
+            font-size: 1.05em;
+            color: #333;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .section-amazing {
+            background: linear-gradient(135deg, #fff9c4 0%, #ffe082 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #ff9800;
+        }
+        .section-reasons {
+            background: linear-gradient(135deg, #ffccbc 0%, #ffab91 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #ff5722;
+        }
+        .section-reasons ol {
+            background-color: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 1.05em;
+        }
+        .section-reasons li {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .section-love {
+            background: linear-gradient(135deg, #c5e1a5 0%, #aed581 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #7cb342;
+        }
+        .section-facts {
+            background: linear-gradient(135deg, #b3e5fc 0%, #81d4fa 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #0277bd;
+        }
+        .section-facts ul {
+            background-color: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 1.05em;
+        }
+        .section-facts li {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .section-gallery {
+            background: linear-gradient(135deg, #f8bbd0 0%, #f48fb1 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #e91e63;
+        }
+        .section-bulka {
+            background: linear-gradient(135deg, #e1bee7 0%, #d1c4e9 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #7b1fa2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery-bulka {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery-item {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-bulka .gallery-item img {
+            height: 400px;
+        }
+        .gallery-item-title {
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐱 Welcome to Cat World</h1>
+    </header>
+    
+    <div class="content">
+        <div class="section-amazing">
+            <h2>Why Cats are Amazing</h2>
+            <p>Cats are independent, playful, and affectionate companions. They've been beloved by humans for thousands of years.</p>
+        </div>
+        
+        <div class="section-reasons">
+            <h2>10 Reasons Why Cats Are Better Than People</h2>
+            <ol>
+                <li>They don't gossip or hold grudges</li>
+                <li>They're always ready for cuddles without drama</li>
+                <li>They never complain about your cooking</li>
+                <li>Their purring is therapeutic and calming</li>
+                <li>They're content with simple things in life</li>
+                <li>They don't judge your lifestyle choices</li>
+                <li>They're excellent hunters and pest control</li>
+                <li>They're independent yet affectionate</li>
+                <li>They live in the moment without stress</li>
+                <li>They provide unconditional love and companionship</li>
+            </ol>
+        </div>
+        
+        <div class="section-love">
+            <h2>Why You Should Love Cats</h2>
+            <p>Cats offer numerous benefits to your physical and mental health. Their companionship reduces stress, lowers blood pressure, and provides emotional support. Whether you're looking for a quiet, low-maintenance pet or an interactive friend, cats adapt to your lifestyle.</p>
+        </div>
+        
+        <div class="section-facts">
+            <h2>Fun Cat Facts</h2>
+            <ul>
+                <li>Cats can sleep 12-16 hours a day</li>
+                <li>They have over 20 different vocal sounds</li>
+                <li>A cat's purr vibrates at a frequency that may promote healing</li>
+                <li>Cats have a specialized collarbone that allows them to squeeze through tight spaces</li>
+                <li>They can jump up to 6 times their own length</li>
+            </ul>
+        </div>
+        
+        <div class="section-gallery">
+            <h2>Cat Gallery - Pictures & Videos</h2>
+            <div class="gallery">
+                <!-- Cat Images -->
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/9j7.jpg" alt="Cute orange cat">
+                    <div class="gallery-item-title">Curious Kitty</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/a7d.jpg" alt="Fluffy cat">
+                    <div class="gallery-item-title">Fluffy Friend</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/e7n.jpg" alt="Sleepy cat">
+                    <div class="gallery-item-title">Nap Time</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/a4g.jpg" alt="Cat in sunlight">
+                    <div class="gallery-item-title">Sun Bathing</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/1n4.jpg" alt="Cute cat face">
+                    <div class="gallery-item-title">Close-up Cuteness</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/cdj.jpg" alt="Cat on chair">
+                    <div class="gallery-item-title">Chill Mode</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="bulka.jpg" alt="Bulka - cute white cat">
+                    <div class="gallery-item-title">⭐ Meet Bulka</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://cdn2.thecatapi.com/images/8vs.jpg" alt="White cat">
+                    <div class="gallery-item-title">Snow White</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-bulka">
+            <h2>Meet Bulka 🐱</h2>
+            <p>Bulka is a beautiful white cat with striking eyes and a loving personality. This precious feline brings joy and warmth to everyone around her. With her fluffy coat and adorable expression, Bulka is truly one of the most charming cats you'll ever meet!</p>
+            
+            <h3 style="color: #7b1fa2; margin-top: 20px;">Why Bulka is Special</h3>
+            <p><strong>Cuteness Level:</strong> Off the charts! Bulka's pristine white fur, delicate pink nose, and mesmerizing eyes make her irresistibly adorable. Her innocent and sweet expression can melt anyone's heart instantly. Whether she's playing, napping, or just staring with those beautiful eyes, Bulka embodies pure cuteness.</p>
+            
+            <p><strong>Intelligence:</strong> Bulka is not just cute—she's incredibly smart! She demonstrates remarkable problem-solving abilities and quickly learns new things. Her curiosity and alertness show a keen mind constantly observing and understanding her surroundings. She knows exactly how to get what she wants and has a charming way of communicating her needs and desires.</p>
+            
+            <p><strong>Personality:</strong> Beyond her looks, Bulka has a wonderful personality. She's affectionate, playful, and loves to be around her family. She enjoys interactive play and is always ready for cuddles. Her intelligence combined with her gentle nature makes her the perfect companion.</p>
+            
+            <div class="gallery-bulka" style="margin-top: 20px;">
+                <div class="gallery-item">
+                    <img src="bulka.jpg" alt="Bulka - cute white cat">
+                    <div class="gallery-item-title">Bulka's Sweet Face</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Bulka_2.jpg" alt="Bulka - beautiful white cat with pink nose">
+                    <div class="gallery-item-title">Bulka at the Table</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Bulka_3.jpg" alt="Bulka - close-up of beautiful eyes">
+                    <div class="gallery-item-title">Bulka's Mesmerizing Eyes</div>
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px; font-style: italic; text-align: center; color: #7b1fa2;"><strong>"Bulka is not just a cat—she's a furry family member full of love, intelligence, and endless charm!"</strong></p>
+        </div>
+    </div>
+</body>
+</html>
